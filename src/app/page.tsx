@@ -1,6 +1,5 @@
 import { CozyRetreatComponent } from '@/components/cozy-retreat/cozy-retreat';
 import Banner from '/public/logo/png/300ppi/melp-banner.webp';
-import { ResponsiveStayCard } from '@/components/responsive-stay-card/responsive-stay-card';
 import { Metadata } from 'next';
 import ServicedApartment from '@/components/serviced-apartments/serviced-apartment';
 import Features from '@/components/features/features';
@@ -26,7 +25,6 @@ export default function Home() {
           <HomeToYours />
           <ContactFormComponent />
           {/* <Compliance /> */}
-          {/* <ResponsiveStayCard /> */}
         </div>
       </div>
     </>

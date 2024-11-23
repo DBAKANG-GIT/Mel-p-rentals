@@ -5,7 +5,6 @@ import Award from '/public/assets/tick-icon.png';
 import Wifi from '/public/assets/wifi.svg';
 import Calendar from '/public/assets/calendar.png';
 import X from '/public/assets/book.png';
-import CirclePlaceholder from '/public/assets/circle.png';
 import FeatureImage from '/public/assets/features.jpeg';
 
 import { Send, Map, Leaf } from 'lucide-react';
