@@ -41,7 +41,7 @@ export default function NewsLetterSignUpForm() {
           setIsError(false);
           setMessage(message);
         }
-      } catch (error) {
+      } catch {
         setIsError(true);
         setMessage('An unexpected error occurred. Please try again later.');
       }

@@ -60,7 +60,7 @@ export function Footer() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="#" className="hover:opacity-80 transition-opacity">
-                <Image src={LinkedIn} className="h-6 w-6" />
+                <Image src={LinkedIn} alt="linkedin-icon" className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
             </div>
