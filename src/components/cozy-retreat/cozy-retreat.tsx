@@ -39,10 +39,7 @@ export function CozyRetreatComponent({
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 max-w-3xl">
           Inspired by Living: A Cozy Retreat for Short-Term Apartment Stays
         </h1>
-        <div className="hidden md:flex items-center gap-2 mb-8">
-          <span>ver video</span>
-          <PlayCircleIcon className="w-6 h-6" />
-        </div>
+        <div className="hidden md:flex items-center gap-2 mb-8"></div>
         <div className="w-full max-w-3xl bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col md:flex-row gap-4">
           <Select value={location} onValueChange={setLocation}>
             <SelectTrigger className="w-full md:w-[180px] bg-white text-black">

@@ -56,7 +56,7 @@ export default function Navbar() {
             text="Book Now"
             color="bg-supportColor"
             textColor="text-white"
-            hoverColor="bg-electric-green-500"
+            hoverColor="bg-hover"
             props="text-lg font-bold py-3 px-6"
           />
         </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 text="Book Now"
                 color="bg-supportColor"
                 textColor="text-white"
-                hoverColor="bg-green-500"
+                hoverColor="bg-hover"
                 props="text-lg font-bold py-3 px-6"
               />
             </animated.div>

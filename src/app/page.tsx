@@ -1,9 +1,12 @@
 import { CozyRetreatComponent } from '@/components/cozy-retreat/cozy-retreat';
 import Banner from '/public/logo/png/300ppi/melp-banner.webp';
-import { FeatureSection } from '@/components/features/feature-section';
 import { ResponsiveStayCard } from '@/components/responsive-stay-card/responsive-stay-card';
-import WhatWeOffer from '@/components/what-we-offer/what-we-offer';
 import { Metadata } from 'next';
+import ServicedApartment from '@/components/serviced-apartments/serviced-apartment';
+import Features from '@/components/features/features';
+import HomeToYours from '@/components/home-to-yours';
+import ContactFormComponent from '@/components/contact-form/contact-form';
+// import Compliance from '@/components/compliance';
 
 export const metadata: Metadata = {
   title: 'Mel P Rentals | Homepage',
@@ -18,8 +21,11 @@ export default function Home() {
       <div>
         <div className="min-h-screen">
           <CozyRetreatComponent backgroundImage={Banner.src} />
-          {/* <FeatureSection /> */}
-          {/* <WhatWeOffer /> */}
+          <ServicedApartment />
+          <Features />
+          <HomeToYours />
+          <ContactFormComponent />
+          {/* <Compliance /> */}
           {/* <ResponsiveStayCard /> */}
         </div>
       </div>

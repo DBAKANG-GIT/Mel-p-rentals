@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/header/header';
-// import Footer from '@/components/footer/footer';
+import { Footer } from '@/components/footer';
 import React from 'react';
 import darkLogo from '/public/logo/png/300ppi/icon-dark.png'; // Adjusted for client's branding
 import lightLogo from '/public/logo/png/300ppi/icon-light.png';
@@ -53,7 +53,9 @@ export default function RootLayout({
           <Analytics />
           <SpeedInsights />
         </main>
-        <footer>{/* <Footer /> */}</footer>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
