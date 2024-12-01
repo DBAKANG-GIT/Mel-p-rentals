@@ -7,10 +7,10 @@ export default function TermsAndConditions() {
     <div className="bg-white min-h-screen p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-          Luxstay Ventures Customer Terms & Conditions
+          Mel P Customer Terms & Conditions
         </h1>
         <p className="text-sm text-custom-gold mb-8">
-          Current as of September 2024
+          Current as of December 2024
         </p>
 
         <div className="space-y-6">
@@ -18,12 +18,12 @@ export default function TermsAndConditions() {
             <p>
               1.1. Your stay with us is not intended to confer exclusive
               possession on either the client or guest nor to create the
-              relationship of landlord and tenant between Luxstay Ventures
-              Limited and either the client or the guest. Neither the client nor
-              the guest will be entitled to any tenancy, or any short assured or
-              assured tenancy, or to any statutory protection under the Housing
-              Act 1988, or to any other statutory security of tenure now or upon
-              the determination of this agreement.
+              relationship of landlord and tenant between Mel P Limited and
+              either the client or the guest. Neither the client nor the guest
+              will be entitled to any tenancy, or any short assured or assured
+              tenancy, or to any statutory protection under the Housing Act
+              1988, or to any other statutory security of tenure now or upon the
+              determination of this agreement.
             </p>
             <p>1.2. Rates are subject to change without notice.</p>
           </Section>
@@ -217,9 +217,9 @@ export default function TermsAndConditions() {
               outside our control. Force majeure events include but are not
               limited to natural disasters, pandemics, government-mandated
               lockdowns, industrial disputes, and acts of terrorism. In the
-              event of such circumstances, Luxstay Ventures Limited will use all
-              reasonable efforts to contact you, but no liability will be
-              accepted for cancellations caused by such events.
+              event of such circumstances, Mel P Limited will use all reasonable
+              efforts to contact you, but no liability will be accepted for
+              cancellations caused by such events.
             </p>
             <p>
               4.3. If you wish to alter your booking, we will use our best
@@ -581,8 +581,8 @@ export default function TermsAndConditions() {
             </p>
             <p>
               &quot;Managing agent&quot; &quot;Us&quot; or &quot;We&quot; refers
-              to Luxstay Ventures Limited offering serviced apartments on behalf
-              of the property owners.
+              to Mel P Limited offering serviced apartments on behalf of the
+              property owners.
             </p>
             <p>
               &quot;Client&quot; is the person who arranges the accommodation –
@@ -596,7 +596,7 @@ export default function TermsAndConditions() {
             <p>&quot;Agreement&quot; means this agreement;</p>
             <p>
               &quot;Apartment or property&quot; – is an accommodation managed by
-              Luxstay Ventures Limited on behalf of the owner(s)
+              Mel P Limited on behalf of the owner(s)
             </p>
             <p>
               &quot;Booking&quot; means an offer from you to us to hire one of

@@ -20,7 +20,7 @@ export default function HeroBanner({ text, imageUrl }: HeroBannerProps) {
           }}
         />
       </div>
-      <div className="relative flex-1 flex items-center justify-start p-8 sm:p-12 md:p-16 lg:p-24">
+      <div className="relative flex-1 flex items-center justify-center p-8 sm:p-12 md:p-16 lg:p-24">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-[80%] sm:max-w-[70%] md:max-w-[60%] lg:max-w-[50%] leading-tight">
           {text}
         </h1>

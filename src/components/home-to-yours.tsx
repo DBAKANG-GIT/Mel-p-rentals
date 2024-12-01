@@ -7,7 +7,7 @@ export default function HomeToYours() {
   return (
     <div className="relative bg-[#FEFEFE] min-h-[70vh] p-4 md:p-8 lg:p-12 overflow-hidden">
       {/* Curved Backdrop */}
-      <div className="absolute top-0 left-0 right-0 w-full h-[580px] md:h-[680px]">
+      <div className="absolute top-0 left-0 right-0 w-full h-[580px]">
         <div className="relative w-full h-full">
           <div
             className="absolute inset-0 bg-[#FFF6ED]"

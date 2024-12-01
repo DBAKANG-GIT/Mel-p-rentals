@@ -2,9 +2,8 @@
 
 import React, { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
-export function PrivacyNoticeComponent() {
+export default function PrivacyNoticeComponent() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const toggleSection = (section: string) => {
@@ -37,32 +36,24 @@ export function PrivacyNoticeComponent() {
   );
 
   return (
-    <div className="bg-white min-h-screen p-4 sm:p-6 lg:p-8">
+    <div className="bg-cream min-h-screen p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-          Luxstay Ventures Customer Privacy Notice
+          Mel P Customer Privacy Notice
         </h1>
         <p className="text-sm text-custom-gold mb-8">
-          Current as of September 2024
+          Current as of December 2024
         </p>
 
-        <div className="mb-8">
-          <Button asChild>
-            <a
-              href="docs/privacy-notice.pdf"
-              download="privacy-notice.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download Privacy Notice (PDF)
-            </a>
-          </Button>
-        </div>
+        <div className="mb-8"></div>
 
         <div className="space-y-6">
           <Section title="Contact details">
-            <p>Post: 483 Green Lanes, LONDON, N13 4BS, GB</p>
-            <p>Email: info@luxstayventures.com</p>
+            <p>
+              Post: 71-75 Shelton Street, Covenant Garden London WC2H 9JQ United
+              Kingdom
+            </p>
+            <p>Email: ishmael@melprentals.com</p>
           </Section>
 
           <Section title="What information we collect, use, and why">
@@ -178,14 +169,12 @@ export function PrivacyNoticeComponent() {
           </Section>
 
           <Section title="How long we keep information">
-            <h3 className="font-semibold mb-2">
-              Luxstay Ventures Retention Policy
-            </h3>
+            <h3 className="font-semibold mb-2">Mel P Retention Policy</h3>
 
             <h4 className="font-semibold mb-2">Purpose</h4>
             <p>
-              This retention policy outlines how Luxstay Ventures manages
-              personal information collected from clients, employees, and other
+              This retention policy outlines how Mel P manages personal
+              information collected from clients, employees, and other
               stakeholders. The policy ensures compliance with data protection
               regulations and promotes transparency.
             </p>
@@ -305,10 +294,9 @@ export function PrivacyNoticeComponent() {
 
             <h4 className="font-semibold mb-2">Review and Deletion</h4>
             <p>
-              Luxstay Ventures will regularly review its retention schedule to
-              ensure compliance with legal requirements. Personal information
-              that is no longer necessary will be securely deleted or
-              anonymized.
+              Mel P will regularly review its retention schedule to ensure
+              compliance with legal requirements. Personal information that is
+              no longer necessary will be securely deleted or anonymized.
             </p>
 
             <h4 className="font-semibold mb-2">Data Security</h4>
