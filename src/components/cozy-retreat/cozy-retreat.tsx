@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import Link from 'next/link';
 
 type CozyRetreatComponentProps = {
   backgroundImage: string;
@@ -39,7 +40,7 @@ export function CozyRetreatComponent({
           Inspired by Living: A Cozy Retreat for Short-Term Apartment Stays
         </h1>
         <div className="hidden md:flex items-center gap-2 mb-8"></div>
-        <div className="w-full max-w-3xl bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col md:flex-row gap-4">
+        <div className="w-full max-w-[30rem] bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col md:flex-row gap-4">
           <Select value={location} onValueChange={setLocation}>
             <SelectTrigger className="w-full md:w-[180px] bg-white text-black">
               <SelectValue placeholder="Location" />
@@ -61,7 +62,7 @@ export function CozyRetreatComponent({
             </SelectContent>
           </Select>
           <Button className="w-full md:w-auto bg-[#A9324D] hover:bg-[#8D2A40] text-white">
-            Search
+            <Link href="/book">Search</Link>
           </Button>
         </div>
       </div>

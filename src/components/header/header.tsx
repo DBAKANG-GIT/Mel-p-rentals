@@ -12,7 +12,6 @@ import CustomButton from '../custom-button/custom-button';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact Us' },
 ];
 
 export default function Navbar() {
