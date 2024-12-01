@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export default function PrivacyNoticeComponent() {
   const [activeSection, setActiveSection] = useState<string | null>(null);

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicedApartments: React.FC = () => {
   return (
-    <div className="w-full flex items-center justify-center  overflow-hidden mx-auto ">
+    <div className="w-full flex items-center justify-center  overflow-hidden mx-auto">
       <div className="px-6 py-8 sm:px-10 sm:py-12 bg-gradient-to-b from-[#FFF5EB] via-white to-white">
         <h2 className="text-[#333333] text-3xl sm:text-3xl font-bold text-center mb-6">
           Why serviced apartments?
@@ -19,11 +19,11 @@ const ServicedApartments: React.FC = () => {
           </p>
           <p>
             The serviced part of serviced apartments means that your apartment
-            is fully serviced, in that it's ready to move into and start living!
-            All the utilities are switched on and included in the rate, bedroom
-            and bathroom linen is provided, the kitchen is fully equipped and
-            ready to start cooking, the cushions are plumped, it's sparkling
-            clean and everything is in full working order.
+            is fully serviced, in that it&apos;s ready to move into and start
+            living! All the utilities are switched on and included in the rate,
+            bedroom and bathroom linen is provided, the kitchen is fully
+            equipped and ready to start cooking, the cushions are plumped,
+            it&apos;s sparkling clean and everything is in full working order.
           </p>
           <p>
             During your stay, the housekeeping team will come in once a week and
