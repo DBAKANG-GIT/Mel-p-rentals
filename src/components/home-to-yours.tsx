@@ -30,6 +30,7 @@ export default function HomeToYours() {
                   layout="fill"
                   objectFit="cover"
                   className="rounded-full"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -37,7 +37,7 @@ export function CozyRetreatComponent({
       />
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-white">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 max-w-3xl">
-          Inspired by Living: A Cozy Retreat for Short-Term Apartment Stays
+          Inspired by Living: A Cozy Retreat for Short-Term Stays
         </h1>
         <div className="hidden md:flex items-center gap-2 mb-8"></div>
         <div className="w-full max-w-[30rem] bg-white/10 backdrop-blur-md rounded-lg p-4 flex flex-col md:flex-row gap-4">

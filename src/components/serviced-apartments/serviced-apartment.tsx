@@ -68,6 +68,7 @@ export default function ServicedApartment() {
                 alt="Apartment Interior"
                 className="object-cover w-full"
                 height={400}
+                loading="lazy"
               />
             </div>
             <div className="p-4">
