@@ -10,7 +10,7 @@ export default function HeroSection() {
         alt="Luxury apartment interior"
         fill
         className="object-cover"
-        priority
+        loading="lazy"
       />
 
       {/* Dark Overlay */}
