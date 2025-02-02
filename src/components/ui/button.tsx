@@ -62,7 +62,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : 'button';
 
     return (
-      <Comp
+      (<Comp
         className={cn(
           buttonVariants({
             variant,
@@ -77,7 +77,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {isLoading ? (
           // Render a simple spinner + text
-          <span className="inline-flex items-center">
+          (<span className="inline-flex items-center">
             <svg
               className="mr-2 h-4 w-4 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
@@ -97,13 +97,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 fill="currentColor"
                 d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 010 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
               />
-            </svg>
-            Loading...
-          </span>
+            </svg>Loading...
+                      </span>)
         ) : (
           props.children
         )}
-      </Comp>
+      </Comp>)
     );
   }
 );
