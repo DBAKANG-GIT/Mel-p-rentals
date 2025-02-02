@@ -1,5 +1,4 @@
-import { ReactElement } from 'react';
-import Link from 'next/link';
+import { ReactElement, MouseEventHandler } from 'react';
 import { Button } from '@/components/ui/button';
 
 type CustomButtonProps = {
@@ -19,6 +18,8 @@ type CustomButtonProps = {
     | 'link'
     | null;
   type?: 'button' | 'submit' | 'reset'; // Added type prop
+  isLoading?: boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 export default function CustomButton({
@@ -27,23 +28,24 @@ export default function CustomButton({
   color,
   textColor,
   hoverColor,
-  href,
   props,
   variant,
   type = 'button', // Default type is 'button'
+  isLoading = false,
+  onClick,
 }: CustomButtonProps) {
   return (
     <Button
       className={`${color} ${textColor} px-4 py-2 hover:${hoverColor} transition-all duration-300 ease-in-out ${props}`}
-      variant={variant || null}
-      type={type} // Pass the type prop to the Button component
+      variant={variant || undefined}
+      type={type}
+      isLoading={isLoading}
+      onClick={onClick}
     >
-      <Link href={href}>
-        <span className="flex items-center justify-center">
-          {text}
-          {icon && <span className="ml-2">{icon}</span>}
-        </span>
-      </Link>
+      <span className="flex items-center justify-center">
+        {text}
+        {icon && <span className="ml-2">{icon}</span>}
+      </span>
     </Button>
   );
 }
