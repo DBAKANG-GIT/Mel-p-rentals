@@ -8,6 +8,7 @@ import darkLogo from '/public/logo/png/300ppi/icon-dark.png'; // Adjusted for cl
 import lightLogo from '/public/logo/png/300ppi/icon-light.png';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Toaster } from 'react-hot-toast';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta-sans',
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>
+          <Toaster position="bottom-center" />
           {children}
           <Analytics />
           <SpeedInsights />
