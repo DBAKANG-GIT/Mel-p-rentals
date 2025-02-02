@@ -1,4 +1,5 @@
 import { FormData } from '@/components/contact-form/contact-form';
+import { toast } from 'react-hot-toast';
 
 export function sendEmail(data: FormData) {
   const apiEndpoint = '/api/email';
@@ -9,7 +10,7 @@ export function sendEmail(data: FormData) {
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response.message);
+      toast.success(response.message);
     })
     .catch((err) => {
       alert(err);
