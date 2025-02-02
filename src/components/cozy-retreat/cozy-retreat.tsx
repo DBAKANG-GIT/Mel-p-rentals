@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
 import {
   Select,
   SelectContent,
@@ -9,7 +8,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import Link from 'next/link';
+import CustomButton from '../custom-button/custom-button';
+import useNavigateWithSpinner from '@/hook/use-navigate-with-spinner';
 
 type CozyRetreatComponentProps = {
   backgroundImage: string;
@@ -20,6 +20,7 @@ export function CozyRetreatComponent({
 }: CozyRetreatComponentProps) {
   const [location, setLocation] = useState('');
   const [property, setProperty] = useState('');
+  const { isLoading, navigate } = useNavigateWithSpinner();
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
@@ -61,9 +62,16 @@ export function CozyRetreatComponent({
               <SelectItem value="villa">Villa</SelectItem>
             </SelectContent>
           </Select>
-          <Button className="w-full md:w-auto bg-[#A9324D] hover:bg-[#8D2A40] text-white">
-            <Link href="/book">Search</Link>
-          </Button>
+          <CustomButton
+            href="/book"
+            text="Search"
+            color="bg-[#A9324D]"
+            textColor="text-white"
+            hoverColor="bg-[#8D2A40]"
+            props="w-full md:w-auto"
+            isLoading={isLoading}
+            onClick={() => navigate('/book')}
+          />
         </div>
       </div>
     </div>
