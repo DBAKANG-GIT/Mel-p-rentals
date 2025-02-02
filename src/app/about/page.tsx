@@ -1,6 +1,6 @@
 import HeroBanner from '@/components/hero-banner';
 import { Metadata } from 'next';
-import banner from '/public/assets/about-image.png';
+import banner from '/public/assets/about-image.webp';
 import ServicedApartmentsComponent from '@/components/serviced-apartments/about-serviced-apartments';
 import HeroSection from '@/components/hero-section';
 import ServicedApartmentsReasons from '@/components/ServicedApartmentsReasons';
