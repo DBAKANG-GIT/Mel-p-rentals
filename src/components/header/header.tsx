@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import CustomButton from '../custom-button/custom-button';
+import useNavigateWithSpinner from '@/hook/use-navigate-with-spinner';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,6 +17,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { isLoading, navigate } = useNavigateWithSpinner();
 
   const fadeIn = useSpring({
     opacity: isOpen ? 1 : 0,
@@ -51,12 +53,14 @@ export default function Navbar() {
           ))}
           <span className="text-gray-400">|</span>
           <CustomButton
-            href="/book"
             text="Book Now"
+            href="/book"
             color="bg-supportColor"
             textColor="text-white"
             hoverColor="bg-hover"
             props="text-lg font-bold py-3 px-6"
+            isLoading={isLoading}
+            onClick={() => navigate('/book')}
           />
         </div>
 
@@ -96,6 +100,8 @@ export default function Navbar() {
                 textColor="text-white"
                 hoverColor="bg-hover"
                 props="text-lg font-bold py-3 px-6"
+                isLoading={isLoading}
+                onClick={() => navigate('/book')}
               />
             </animated.div>
           </SheetContent>
